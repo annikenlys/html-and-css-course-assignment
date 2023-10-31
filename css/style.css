@@ -18,12 +18,137 @@ body {
     min-height: 100vh;
 }
 
+h1 {
+    color: var(--white);
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 40;
+    letter-spacing: 1.29px;
+    width: 380px;
+    height: 80px;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+
+P {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25;
+    color: var(--white);
+    opacity: 75%;
+}
+
+.btn {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 160px;
+    height: 48px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.outer-container {
+    background-color: #191919;
+    height: 600px;
+}
+
+.inner-container {
+    max-width: 1110px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.hero-banner-inner-container {
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    border-bottom: 1px solid rgb(151 151 151 / 10%);
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-desktop {
+    display: none;
+}
+
+/*NAV HAMBURGER MENU*/
+#toggleBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-banner-section {
+    background-image: url("../assets/home/mobile/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.hero-banner-content {
+    width: 328px;
+    height: 328px;
+    margin: 198px auto 0 auto;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.hero-banner-content h2 {
+    color: var(--white);
+    opacity: 49.64%;
+    margin: 0;
+}
+
+/*HERO BANNER BUTTON*/
+.hero-banner-content a {
+    color: var(--white);
+    background-color: var(--orange);
+    padding: 15px 30px;
+}
+
+.hero-banner-section a:hover {
+    background-color: var(--orange-lighter);
+    cursor: pointer;
+}
+
 /* Small (sm) */
 @media (min-width: 640px) {
 }
 
 /* Medium (md) */
 @media (min-width: 768px) {
+    .out-container {
+        height: 728px;
+    }
+
+    .hero-banner-section {
+        background-image: url("../assets/home/tablet/image-header.jpg");
+    }
+
+    header {
+        justify-content: flex-start;
+        gap: 42px;
+    }
+
+    header .checkout-btn {
+        margin-left: auto;
+    }
 }
 
 /* Large (lg) */
@@ -32,6 +157,46 @@ body {
 
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
+    header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .hero-banner-section {
+        background-image: url("../assets/home/desktop/image-hero.jpg");
+        background-size: cover;
+    }
+
+    .menu-toggle-btn {
+        display: none;
+    }
+
+    .nav-desktop {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .nav-desktop ul {
+        display: flex;
+        gap: 34px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-desktop a {
+        color: var(--white);
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 2px;
+    }
+
+    .nav-desktop a:hover, .nav-desktop a:focus {
+        color: var(--orange);
+    }
+
 }
 
 /* 2XL (2xl) */
