@@ -4,7 +4,7 @@
     --gray: #F1F1F1;
     --gray-lighter: #FAFAFA;
     --orange-lighter: #fbaf85;
-    --white: #FFF;
+    --white: rgb(255, 255, 255);
     --black: #000;
 }
 
@@ -22,11 +22,13 @@ h1 {
     color: var(--white);
     font-size: 2.25rem;
     font-weight: 700;
-    line-height: 40;
+    line-height: 40px;
     letter-spacing: 1.29px;
-    width: 380px;
+    text-transform: uppercase;
+    width: 328px;
     height: 80px;
     margin-top: 1rem;
+    margin-bottom: 24px;
 }
 
 h2 {
@@ -38,7 +40,7 @@ h2 {
 P {
     font-size: 15px;
     font-weight: 500;
-    line-height: 25;
+    line-height: 25px;
     color: var(--white);
     opacity: 75%;
 }
@@ -103,16 +105,19 @@ header {
 .hero-banner-content {
     width: 328px;
     height: 328px;
-    margin: 198px auto 0 auto;
+    margin: 198px auto 74px auto;
     text-align: center;
-    justify-content: center;
-    justify-items: center;
 }
 
 .hero-banner-content h2 {
     color: var(--white);
     opacity: 49.64%;
     margin: 0;
+}
+
+.hero-banner-content p {
+    height: 75px;
+    margin: 0 auto 28px auto;
 }
 
 /*HERO BANNER BUTTON*/
