@@ -24,7 +24,7 @@ h1 {
     font-size: 36px;
     font-weight: 700;
     line-height: 40px;
-    letter-spacing: 1.29px;
+    letter-spacing: .08rem;
     text-transform: uppercase;
     margin-top: 1rem;
     margin-bottom: 24px;
@@ -180,20 +180,25 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    /*gap: 48px;*/
+    flex-shrink: 0;
 }
 
-footer .logo {
+.logo-footer {
     height: 25px;
+}
+
+.flex-container-desktop {
     margin-top: 52px;
-    margin-bottom: 48px;
 }
 
 /*footer navigation*/
+.nav-footer {
+    margin: 48px auto;
+}
+
 .nav-footer ul {
     flex-direction: column;
     gap: 16px;
-    margin-bottom: 48px;
 }
 
 /*footer text*/
@@ -297,15 +302,23 @@ footer .logo {
 
     footer {
         text-align: left;
-        gap: 0;
     }
 
-    footer .logo {
+    .logo-footer {
         margin-top: 60px;
         margin-bottom: 2rem;
     }
 
+    .nav-footer {
+        margin: 0;
+    }
+
     /*footer navigation*/
+    /*footer navigation*/
+    .nav-footer {
+        margin: 32px auto;
+    }
+
     .nav-footer ul {
         flex-direction: row;
         gap: 34px;
@@ -408,12 +421,15 @@ footer .logo {
         height: 365px;
     }
 
-    footer {
-        text-align: left;
-        gap: 0;
+    .nav-footer {
+        margin: 0;
     }
 
-    footer .logo {
+    footer {
+        text-align: left;
+    }
+
+    .logo-footer {
         margin: 0;
     }
 
