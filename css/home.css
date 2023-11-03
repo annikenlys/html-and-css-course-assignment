@@ -58,6 +58,100 @@ h4 {
     margin: 0 0 28px 0;
 }
 
+/*MAIN*/
+.outer-container-main {
+}
+
+.inner-container-main {
+}
+
+    /*Page Navigation Cards*/
+.page-card-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 2.5rem;
+    gap: 1rem;
+}
+
+.page-card {
+    width: 327px;
+    height: 217px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+}
+
+.page-card:hover {
+    cursor: pointer;
+}
+
+.card-header {
+    height: 52px;
+    background-color: transparent;
+}
+
+.card-body {
+    background-color: var(--color-card);
+    height: 165px;
+    border-radius: .5rem;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    bottom: 36px;
+    position: relative;
+}
+
+.card-headphones-img {
+    background-image: url("../assets/home/mobile/img.png");
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    width: 120px;
+    height: 110px;
+}
+
+.card-speaker-img {
+    background-image: url("../assets/home/mobile/img_2.png");
+    background-size: cover;
+    margin: auto;
+    width: 120px;
+    height: 110px;
+    bottom: 39px;
+}
+
+.card-earphones-img {
+    background-image: url("../assets/home/mobile/img_1.png");
+    background-size: cover;
+    margin: auto;
+    width: 120px;
+    height: 110px;
+    bottom: 36px;
+}
+
+.card-content {
+    position: relative;
+    bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-category-text {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.067rem;
+    text-align: center;
+    margin-bottom: 17px;
+}
+
 /*MEDIA QUERY SCREEN SIZES*/
 /*Tablet (M)*/
 @media (min-width: 768px) {
@@ -68,7 +162,7 @@ h4 {
         margin: 24px 0;
     }
 
-    /*HERO BANNER*/
+    /*HERO BANNER Tablet*/
     .hero-banner-section {
         background-image: url("../assets/home/tablet/image-header.jpg");
     }
@@ -85,6 +179,19 @@ h4 {
 
     .hero-banner-content p {
         margin: 0 0 40px 0;
+    }
+
+    /*MAIN Tablet*/
+    /*Page Navigation Cards*/
+    .page-card-container {
+        flex-direction: row;
+        margin-top: 6rem;
+        gap: 10px;
+    }
+
+    .page-card {
+        width: 689px;
+        height: 217px;
     }
 }
 
@@ -123,5 +230,53 @@ h4 {
 
     .hero-banner-section a {
         align-self: self-start;
+    }
+
+    /*MAIN*/
+
+    /*Page Navigation Cards*/
+    .page-card-container {
+        margin-top: 7.5rem;
+        gap: 30px;
+    }
+
+    .page-card {
+        width: 350px;
+        height: 263px;
+    }
+
+    .card-header {
+        height: 59px;
+    }
+
+    .card-body {
+        height: 204px;
+    }
+
+    .card-headphones-img img {
+        width: 7.684rem;
+        height: 160px;
+    }
+
+    .card-speaker-img img {
+        width: 7.593rem;
+        height: 146px;
+        bottom: 2.656rem;
+    }
+
+    .card-headphones-img img {
+        width: 125px;
+        height: 126px;
+        bottom: 49px;
+    }
+
+    .card-content {
+        bottom: 30px;
+    }
+
+    .card-category-text {
+        font-size: 18px;
+        letter-spacing: 0.081rem;
+        margin-bottom: 15px;
     }
 }

@@ -25,7 +25,10 @@ h2 {
     font-weight: 700;
     letter-spacing: 1px;
     text-align: center;
+    text-transform: uppercase;
 }
+
+
 
 h3 {
     font-size: 14px;
@@ -72,6 +75,26 @@ P {
     color: var(--secondary);
     background-color: var(--tertiary);
 }
+
+.btn-3 {
+    width: 3.583rem;
+    height: 18px;
+}
+
+.btn-3-text {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--tertiary);
+    opacity: 50%;
+}
+
+.btn-3-text:hover {
+    color: var(--primary);
+}
+
 
 ul {
     display: flex;
@@ -174,7 +197,7 @@ footer {
 }
 
 /*footer text*/
-.text-about {
+.footer-text-about {
     width: 327px;
     margin: 0 auto 48px auto;
 }
@@ -272,7 +295,7 @@ footer {
     }
 
     /*footer text*/
-    .text-about {
+    .footer-text-about {
         width: 689px;
         text-align: left;
         margin-bottom: 5rem;
@@ -342,7 +365,7 @@ footer {
     }
 
     /*footer text*/
-    .text-about {
+    .footer-text-about {
         width: 540px;
         text-align: left;
         margin: 36px 0 56px;
