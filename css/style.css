@@ -19,18 +19,15 @@ body {
     min-height: 100vh;
 }
 
-h1 {
-    color: var(--secondary);
-    font-size: 36px;
+h2 {
+    color: var(--tertiary);
+    font-size: 28px;
     font-weight: 700;
-    line-height: 40px;
-    letter-spacing: .08rem;
-    text-transform: uppercase;
-    margin-top: 1rem;
-    margin-bottom: 24px;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
-h2 {
+h3 {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 10px;
@@ -52,6 +49,28 @@ P {
     height: 48px;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 15px 30px;
+}
+
+.btn-1 {
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+
+.btn-1:hover {
+    background-color: var(--primary-active);
+}
+
+.btn-2 {
+    color: var(--tertiary);
+    background-color: var(--secondary);
+    border: solid 1px var(--tertiary);
+
+}
+
+.btn-2:hover {
+    color: var(--secondary);
+    background-color: var(--tertiary);
 }
 
 ul {
@@ -61,20 +80,7 @@ ul {
     margin: 0;
 }
 
-a {
-    color: var(--secondary);
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 25px;
-    letter-spacing: 2px;
-}
-
-a:hover, a:focus {
-    color: var(--primary);
-}
-
-/*HEADER - NAV & HERO BANNER*/
+/*HEADER - NAV*/
 .outer-container-header {
     background-color: #191919;
     height: 600px;
@@ -84,10 +90,6 @@ a:hover, a:focus {
     max-width: 1110px;
     height: 100%;
     margin: 0 auto;
-}
-
-.hero-banner-inner-container {
-    position: relative;
 }
 
 header {
@@ -111,48 +113,18 @@ header {
     cursor: pointer;
 }
 
-.hero-banner-section {
-    background-image: url("../assets/home/mobile/image-header.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-}
-
-.hero-banner-content {
-    width: 328px;
-    height: 290px;
-    margin: 198px auto 112px auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-banner-content h2 {
+/*Header/Footer - Navigation Links*/
+a {
     color: var(--secondary);
-    opacity: 49.64%;
-    margin: 0;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
 }
 
-.hero-banner-content p {
-    margin: 0 0 28px 0;
-}
-
-/*hero banner button*/
-.hero-banner-content a {
-    color: var(--secondary);
-    background-color: var(--primary);
-    padding: 15px 30px;
-}
-
-.hero-banner-section a:hover {
-    background-color: var(--primary-active);
-    cursor: pointer;
+a:hover, a:focus {
+    color: var(--primary);
 }
 
 /*FOOTER*/
@@ -244,14 +216,13 @@ footer {
     fill: var(--primary);
 }
 
-/*MEDIA QUERY SCREEN SIZES*/
-/* Small (sm) */
-@media (min-width: 640px) {
-}
 
-/* Medium (md) */
+/*MEDIA QUERY SCREEN SIZES*/
+
+    /*Tablet (M)*/
 @media (min-width: 768px) {
-    /*HEADER - NAV & HERO BANNER*/
+
+    /*HEADER - NAV*/
     .outer-container-header {
         height: 729px;
     }
@@ -260,34 +231,9 @@ footer {
         max-width: 689px;
     }
 
-    .hero-banner-section {
-        background-image: url("../assets/home/tablet/image-header.jpg");
-    }
-
     header {
         justify-content: flex-start;
         gap: 42px;
-    }
-
-    header .checkout-btn {
-        margin-left: auto;
-    }
-
-    .hero-banner-content {
-        width: 379px;
-        height: 346px;
-        margin-top: 216px;
-    }
-
-    h1 {
-        font-size: 56px;
-        line-height: 58px;
-        letter-spacing: 2px;
-        margin: 24px 0;
-    }
-
-    .hero-banner-content p {
-        margin: 0 0 40px 0;
     }
 
     /*FOOTER*/
@@ -349,13 +295,9 @@ footer {
     }
 }
 
-/* Large (lg) */
-@media (min-width: 1024px) {
-}
-
-/* Extra Large (xl) */
+    /*Desktop (XL) */
 @media (min-width: 1280px) {
-    /*HEADER - NAV & HERO BANNER*/
+    /*HEADER - NAV*/
     .outer-container-header {
         height: 729px;
     }
@@ -369,11 +311,6 @@ footer {
         padding-right: 0;
     }
 
-    .hero-banner-section {
-        background-image: url("../assets/home/desktop/image-hero.jpg");
-        background-size: cover;
-    }
-
     .menu-toggle-btn {
         display: none;
     }
@@ -385,35 +322,6 @@ footer {
 
     .nav-desktop ul {
         gap: 34px;
-    }
-
-    .hero-banner-content {
-        width: 398px;
-        height: 346px;
-        margin-top: 225px;
-        margin-left: 0;
-        text-align: left;
-    }
-
-    h1 {
-        font-size: 56px;
-        line-height: 58px;
-        letter-spacing: 2px;
-        margin: 24px 0;
-    }
-
-    .hero-banner-section h2 {
-        align-self: flex-start;
-    }
-
-    .hero-banner-section p {
-        width: 349px;
-        align-self: flex-start;
-        margin-bottom: 40px;
-    }
-
-    .hero-banner-section a {
-        align-self: self-start;
     }
 
     /*FOOTER*/
@@ -468,8 +376,3 @@ footer {
         flex: 1;
     }
 }
-
-/* 2XL (2xl) */
-@media (min-width: 1536px) {
-}
-
