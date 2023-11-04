@@ -102,37 +102,34 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.card-img {
-    bottom: 36px;
     position: relative;
 }
 
 .card-headphones-img {
-    background-image: url("../assets/home/mobile/img.png");
+    background-image: url("../assets/home/mobile/headpnones_small.png");
     background-size: cover;
     background-position: center;
     margin: auto;
-    width: 120px;
-    height: 110px;
+    width: 4.995rem;
+    height: 104px;
+    bottom: 36px;
 }
 
 .card-speaker-img {
-    background-image: url("../assets/home/mobile/img_2.png");
+    background-image: url("../assets/home/mobile/speakers_small.png");
     background-size: cover;
     margin: auto;
-    width: 120px;
-    height: 110px;
+    width: 5.253rem;
+    height: 101px;
     bottom: 39px;
 }
 
 .card-earphones-img {
-    background-image: url("../assets/home/mobile/img_1.png");
+    background-image: url("../assets/home/mobile/earphones_small.png");
     background-size: cover;
     margin: auto;
-    width: 120px;
-    height: 110px;
+    width: 103px;
+    height: 104px;
     bottom: 36px;
 }
 
@@ -145,6 +142,7 @@ h4 {
 }
 
 .card-category-text {
+    color: var(--tertiary);
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.067rem;
@@ -182,16 +180,17 @@ h4 {
     }
 
     /*MAIN Tablet*/
+
     /*Page Navigation Cards*/
     .page-card-container {
         flex-direction: row;
         margin-top: 6rem;
         gap: 10px;
+        width: 689px;
     }
 
     .page-card {
-        width: 689px;
-        height: 217px;
+        width: 223px;
     }
 }
 
@@ -238,40 +237,77 @@ h4 {
     .page-card-container {
         margin-top: 7.5rem;
         gap: 30px;
+        height: 284px;
+        width: 100%;
     }
 
     .page-card {
         width: 350px;
-        height: 263px;
+        margin: 0;
     }
 
-    .card-header {
+    .page-card-headphones .card-header {
+        height: 80px;
+    }
+
+    .page-card-speakers .card-header {
+        height: 4.531rem;
+    }
+
+    .page-card-earphones .card-header {
         height: 59px;
     }
 
     .card-body {
         height: 204px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .card-headphones-img img {
-        width: 7.684rem;
-        height: 160px;
+    .page-card-headphones {
+        height: 284px;
     }
 
-    .card-speaker-img img {
-        width: 7.593rem;
-        height: 146px;
-        bottom: 2.656rem;
+    .page-card-speakers {
+        height: 17.281rem;
+        align-self: flex-end;
     }
 
-    .card-headphones-img img {
-        width: 125px;
-        height: 126px;
-        bottom: 49px;
+    .page-card-earphones {
+        height: 263px;
+        align-self: flex-end;
     }
 
     .card-content {
-        bottom: 30px;
+        position: absolute;
+    }
+
+    .card-img {
+        margin: 0;
+    }
+
+    .card-headphones-img {
+        background-image: url("../assets/home/desktop/headphones_large.png");
+        width: 7.684rem;
+        height: 160px;
+        bottom: 102px;
+        /*margin: 0;*/
+        /*top: -80px;*/
+    }
+
+    .card-speaker-img {
+        background-image: url("../assets/home/desktop/speakers_large.png");
+        width: 7.593rem;
+        height: 146px;
+        bottom: 101px;
+    }
+
+    .card-earphones-img {
+        background-image: url("../assets/home/desktop/eraphones_large.png");
+        width: 125px;
+        height: 126px;
+        bottom: 98px;
     }
 
     .card-category-text {
