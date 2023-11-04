@@ -59,13 +59,14 @@ h4 {
 }
 
 /*MAIN*/
-.outer-container-main {
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
 }
 
-.inner-container-main {
-}
-
-    /*Page Navigation Cards*/
+/*Page Category Navigation Cards*/
 .page-card-container {
     display: flex;
     flex-direction: column;
@@ -150,6 +151,91 @@ h4 {
     margin-bottom: 17px;
 }
 
+/*Product Navigation Cards*/
+.product-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.product-cards {
+    border-radius: .5rem;
+}
+
+/*Product Card 1*/
+.product-card-1 {
+    height: 600px;
+    width: 327px;
+    background-color: var(--primary);
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-circles {
+    position: absolute;
+    height: 558px;
+    width: 558px;
+    bottom: 163px;
+    left: -35.5%;
+}
+
+.product-card-1-img {
+    background-image: url("../assets/home/mobile/image-speaker-zx9.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10.766rem;
+    width: 207px;
+    z-index: 1;
+    margin-bottom: 64px;
+    margin-top: 55px;
+}
+
+.product-card-1-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    gap: 0;
+}
+
+.product-card-1 h4 {
+    margin: 0 0 24px 0;
+}
+
+.product-card-1 p {
+    width: 280px;
+    height: 75px;
+    margin: 0 0 24px 0;
+}
+
+.product-card-1 .btn-2  {
+    margin-bottom: 55px;
+}
+
+/*Product Card 2*/
+.product-card-2 {
+    background-image: url("../assets/home/mobile/image-speaker-zx7.jpg");
+    background-size: cover;
+    width: 327px;
+    height: 320px;
+    display: flex;
+    /*z-index: 1;*/
+
+}
+
+.background-mask {
+    mask-image: url("../assets/home/mobile/mask.png");
+    mask-size: cover;
+    z-index: 1;
+}
+
+
 /*MEDIA QUERY SCREEN SIZES*/
 /*Tablet (M)*/
 @media (min-width: 768px) {
@@ -203,7 +289,7 @@ h4 {
         margin: 24px 0;
     }
 
-    /*HERO BANNER*/
+    /*HERO BANNER Desktop*/
     .hero-banner-section {
         background-image: url("../assets/home/desktop/image-hero.jpg");
         background-size: cover;
@@ -231,7 +317,7 @@ h4 {
         align-self: self-start;
     }
 
-    /*MAIN*/
+    /*MAIN Desktop*/
 
     /*Page Navigation Cards*/
     .page-card-container {
@@ -292,8 +378,6 @@ h4 {
         width: 7.684rem;
         height: 160px;
         bottom: 102px;
-        /*margin: 0;*/
-        /*top: -80px;*/
     }
 
     .card-speaker-img {

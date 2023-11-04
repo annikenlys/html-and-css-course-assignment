@@ -65,16 +65,27 @@ P {
 }
 
 .btn-2 {
-    color: var(--tertiary);
-    background-color: var(--secondary);
-    border: solid 1px var(--tertiary);
-
-}
-
-.btn-2:hover {
     color: var(--secondary);
     background-color: var(--tertiary);
 }
+
+.btn-2:hover {
+    color: var(--tertiary);
+    background-color: var(--secondary);
+    border: solid 1px var(--tertiary);
+}
+
+.btn-2-vol2 {
+    color: var(--tertiary);
+    background-color: transparent;
+    border: solid 1px var(--tertiary);
+}
+
+.btn-2-vol2:hover {
+    color: var(--secondary);
+    background-color: var(--tertiary);
+}
+
 
 .btn-3 {
     width: 3.583rem;
