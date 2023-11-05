@@ -28,12 +28,22 @@ h2 {
     text-transform: uppercase;
 }
 
-
-
 h3 {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 10px;
+}
+
+h4 {
+    color: var(--secondary);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: .08rem;
+    text-align: center;
+    height: 5rem;
+    width: 280px;
+    margin: 294px auto 24px;
 }
 
 P {
@@ -71,9 +81,8 @@ P {
 }
 
 .btn-2:hover {
-    color: var(--tertiary);
-    background-color: var(--secondary);
-    border: solid 1px var(--tertiary);
+    color: var(--secondary);
+    background-color: #4C4C4C;
 }
 
 .btn-2-vol2 {
