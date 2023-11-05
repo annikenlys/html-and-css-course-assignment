@@ -9,6 +9,11 @@ h1 {
     margin-bottom: 24px;
 }
 
+p {
+    color: var(--secondary);
+    opacity: 75%;
+}
+
 /*HERO BANNER*/
 .hero-banner-inner-container {
     position: relative;
@@ -48,8 +53,6 @@ h1 {
 
 /*MAIN*/
 main {
-    display: flex;
-    flex-direction: column;
     gap: 120px;
 }
 
@@ -191,7 +194,7 @@ main {
     height: 600px;
 }
 
-.product-card-1 h4 {
+.product-card-1 h5 {
     margin: 0 0 24px 0;
 }
 
@@ -280,10 +283,6 @@ main {
     margin: 0;
 }
 
-/*About*/
-.main-about {
-}
-
 /*MEDIA QUERY SCREEN SIZES*/
 /*Tablet (M)*/
 @media (min-width: 768px) {
@@ -314,6 +313,10 @@ main {
     }
 
     /*MAIN Tablet*/
+    main {
+        gap: 96px;
+    }
+
     /*PAGE NAV CARDS*/
     .page-card-container {
         flex-direction: row;
@@ -362,7 +365,7 @@ main {
         z-index: 1;
     }
 
-    .product-card-1 h4 {
+    .product-card-1 h5 {
         font-size: 56px;
         line-height: 58px;
         letter-spacing: 2px;
@@ -462,6 +465,10 @@ main {
     }
 
     /*MAIN Desktop*/
+    main {
+        gap: 200px;
+    }
+
     /*PAGE NAV CARDS*/
     .page-card-container {
         margin-top: 7.5rem;
@@ -588,7 +595,7 @@ main {
         justify-items: stretch;
     }
 
-    .product-card-1 h4 {
+    .product-card-1 h5 {
         text-align: left;
     }
 

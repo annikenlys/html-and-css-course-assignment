@@ -35,6 +35,15 @@ h3 {
 }
 
 h4 {
+    color: var(--tertiary);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h5 {
     color: var(--secondary);
     font-size: 36px;
     font-weight: 700;
@@ -50,8 +59,6 @@ P {
     font-size: 15px;
     font-weight: 500;
     line-height: 25px;
-    color: var(--secondary);
-    opacity: 75%;
 }
 
 .btn {
@@ -171,6 +178,13 @@ a:hover, a:focus {
     color: var(--primary);
 }
 
+/*MAIN*/
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
 /*FOOTER*/
 .outer-container-footer {
     background-color: var(--color-footer);
@@ -262,9 +276,13 @@ footer {
 
 
 /*MEDIA QUERY SCREEN SIZES*/
-
-    /*Tablet (M)*/
+/*Tablet (M)*/
 @media (min-width: 768px) {
+    h4 {
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 0.089rem;
+    }
 
     /*HEADER - NAV*/
     .outer-container-header {
@@ -304,7 +322,6 @@ footer {
     }
 
     /*footer navigation*/
-    /*footer navigation*/
     .nav-footer {
         margin: 32px auto;
     }
@@ -339,8 +356,12 @@ footer {
     }
 }
 
-    /*Desktop (XL) */
+/*Desktop (XL) */
 @media (min-width: 1280px) {
+    h4 {
+        text-align: left;
+    }
+
     /*HEADER - NAV*/
     .outer-container-header {
         height: 729px;
