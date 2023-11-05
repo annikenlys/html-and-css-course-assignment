@@ -23,9 +23,12 @@ h2 {
     color: var(--tertiary);
     font-size: 28px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-align: center;
+    text-transform: uppercase;
 }
+
+
 
 h3 {
     font-size: 14px;
@@ -45,11 +48,12 @@ P {
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 1px;
+    text-align: left;
     width: 160px;
     height: 48px;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 15px 30px;
+    padding: 12px 28px;
 }
 
 .btn-1 {
@@ -62,16 +66,47 @@ P {
 }
 
 .btn-2 {
-    color: var(--tertiary);
-    background-color: var(--secondary);
-    border: solid 1px var(--tertiary);
-
-}
-
-.btn-2:hover {
     color: var(--secondary);
     background-color: var(--tertiary);
 }
+
+.btn-2:hover {
+    color: var(--tertiary);
+    background-color: var(--secondary);
+    border: solid 1px var(--tertiary);
+}
+
+.btn-2-vol2 {
+    color: var(--tertiary);
+    background-color: transparent;
+    border: solid 1px var(--tertiary);
+}
+
+.btn-2-vol2:hover {
+    color: var(--secondary);
+    background-color: var(--tertiary);
+}
+
+
+.btn-3 {
+    width: 3.583rem;
+    height: 18px;
+}
+
+.btn-3-text {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--tertiary);
+    opacity: 50%;
+}
+
+.btn-3-text:hover {
+    color: var(--primary);
+}
+
 
 ul {
     display: flex;
@@ -87,7 +122,7 @@ ul {
 }
 
 .inner-container {
-    max-width: 1110px;
+    max-width: 327px;
     height: 100%;
     margin: 0 auto;
 }
@@ -174,7 +209,7 @@ footer {
 }
 
 /*footer text*/
-.text-about {
+.footer-text-about {
     width: 327px;
     margin: 0 auto 48px auto;
 }
@@ -272,7 +307,7 @@ footer {
     }
 
     /*footer text*/
-    .text-about {
+    .footer-text-about {
         width: 689px;
         text-align: left;
         margin-bottom: 5rem;
@@ -342,7 +377,7 @@ footer {
     }
 
     /*footer text*/
-    .text-about {
+    .footer-text-about {
         width: 540px;
         text-align: left;
         margin: 36px 0 56px;
