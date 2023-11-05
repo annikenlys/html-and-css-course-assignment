@@ -23,7 +23,7 @@ h2 {
     color: var(--tertiary);
     font-size: 28px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -48,11 +48,12 @@ P {
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 1px;
+    text-align: left;
     width: 160px;
     height: 48px;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 15px 30px;
+    padding: 12px 28px;
 }
 
 .btn-1 {

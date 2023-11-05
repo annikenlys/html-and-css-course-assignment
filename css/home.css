@@ -222,19 +222,80 @@ main {
 .product-card-2 {
     background-image: url("../assets/home/mobile/image-speaker-zx7.jpg");
     background-size: cover;
+    filter: contrast(1.25);
     width: 327px;
     height: 320px;
     display: flex;
-    /*z-index: 1;*/
-
+    position: relative;
 }
 
-.background-mask {
-    mask-image: url("../assets/home/mobile/mask.png");
-    mask-size: cover;
+.card-overlay {
+    border-radius: .5rem;
+    background-color: var(--tertiary);
+    opacity: 21%;
+    background-size: cover;
+    width: 327px;
+    height: 320px;
+    position: absolute;
+}
+
+.product-card-2-content {
+    width: 204px;
+    height: 118px;
+    margin: auto 0 auto 24px;
     z-index: 1;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-content: space-between;
 }
 
+.product-card-2-content h2 {
+    margin: 0;
+}
+
+/*Product Card 3*/
+.product-card-3 {
+    width: 327px;
+    height: 434px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.product-card-3 .flex-content-img {
+    background-image: url("../assets/home/mobile/image-earphones-yx1.jpg");
+    background-size: contain;
+    height: 200px;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.product-card-3 .flex-content-text-btn {
+    background-color: var(--color-card);
+    height: 200px;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.product-card-3 .flex-content-container {
+    width: 274px;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+    margin: 41px 56px 41px 24px;
+}
+
+.product-card-3 h2 {
+    margin: 0;
+}
+
+/*About*/
+.main-about {
+}
 
 /*MEDIA QUERY SCREEN SIZES*/
 /*Tablet (M)*/
