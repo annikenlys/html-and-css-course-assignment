@@ -14,6 +14,18 @@ p {
     opacity: 75%;
 }
 
+/*HEADER*/
+.outer-container-header {
+    background-color: #191919;
+    height: 600px;
+}
+
+header {
+    border-bottom: 1px solid rgb(151 151 151 / 10%);
+    position: relative;
+    z-index: 2;
+}
+
 /*HERO BANNER*/
 .hero-banner-inner-container {
     position: relative;
@@ -286,20 +298,21 @@ main {
 /*MEDIA QUERY SCREEN SIZES*/
 /*Tablet (M)*/
 @media (min-width: 768px) {
+    /*HEADER / NAV*/
+    .outer-container-header {
+        height: 729px;
+    }
+
+    /*HERO BANNER*/
+    .hero-banner-section {
+        background-image: url("../assets/home/tablet/image-header.jpg");
+    }
+
     h1 {
         font-size: 56px;
         line-height: 58px;
         letter-spacing: 2px;
         margin: 24px 0;
-    }
-
-    /*HERO BANNER Tablet*/
-    .hero-banner-section {
-        background-image: url("../assets/home/tablet/image-header.jpg");
-    }
-
-    header .checkout-btn {
-        margin-left: auto;
     }
 
     .hero-banner-content {
@@ -429,17 +442,22 @@ main {
 
 /*Desktop (XL) */
 @media (min-width: 1280px) {
+    /*HEADER / NAV*/
+    .outer-container-header {
+        height: 729px;
+    }
+
+    /*HERO BANNER*/
+    .hero-banner-section {
+        background-image: url("../assets/home/desktop/image-hero.jpg");
+        background-size: cover;
+    }
+
     h1 {
         font-size: 56px;
         line-height: 58px;
         letter-spacing: 2px;
         margin: 24px 0;
-    }
-
-    /*HERO BANNER Desktop*/
-    .hero-banner-section {
-        background-image: url("../assets/home/desktop/image-hero.jpg");
-        background-size: cover;
     }
 
     .hero-banner-content {
@@ -464,7 +482,7 @@ main {
         align-self: self-start;
     }
 
-    /*MAIN Desktop*/
+    /*MAIN*/
     main {
         gap: 200px;
     }
