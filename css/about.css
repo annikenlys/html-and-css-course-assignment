@@ -16,10 +16,15 @@
     margin-bottom: 40px;
 }
 
-.flex-content-about-text h4 {
+.flex-content-about-text h2 {
+    letter-spacing: 1px;
     height: 76px;
     margin-bottom: 32px;
     margin-top: 0;
+}
+
+.flex-content-about-text h2 span {
+    color: var(--primary);
 }
 
 .flex-content-about-text p {
@@ -30,13 +35,10 @@
     margin: 0;
 }
 
-.flex-content-about-text h4 span {
-    color: var(--primary);
-}
-
 /*MEDIA QUERY SCREEN SIZES*/
 /*Tablet (M)*/
 @media (min-width: 768px) {
+    /*ABOUT SECTION*/
     .flex-container-about {
         width: 100%;
         height: 633px;
@@ -56,7 +58,10 @@
         align-items: center;
     }
 
-    .flex-content-about-text h4 {
+    .flex-content-about-text h2 {
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 0.089rem;
         width: 573px;
         height: 88px;
     }
@@ -69,6 +74,7 @@
 
 /*Desktop (XL) */
 @media (min-width: 1280px) {
+    /*ABOUT SECTION*/
     .flex-container-about {
         height: 588px;
         margin-bottom: 200px;
@@ -92,7 +98,8 @@
         margin: 146px 123px 147px 0;
     }
 
-    .flex-content-about-text h4 {
+    .flex-content-about-text h2 {
+        text-align: left;
         width: 445px;
     }
 
