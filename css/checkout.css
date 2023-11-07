@@ -90,7 +90,7 @@ input {
     padding: 18px 0 19px 24px;
 }
 
-input:is(:hover, :focus) {
+input:is(:hover, :focus, :active) {
     cursor: pointer;
     outline-color: var(--primary);
 }
@@ -118,10 +118,12 @@ label {
     margin: 0;
 }
 
-.radio:is(:hover, :focus, :active) {
+.radio:is(:hover, :active) {
     cursor: pointer;
     border-color: var(--primary);
 }
+
+
 
 input[type="radio"] {
     width: 20px;
