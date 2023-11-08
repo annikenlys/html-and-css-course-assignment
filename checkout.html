@@ -71,77 +71,90 @@
             </a>
 
             <div class="flex-container">
-
                 <div class="checkout-container">
                     <h1>CHECKOUT</h1>
                     <div class="form-container">
                         <form>
-                            <!--Shipping info-->
-                            <div class="info-box billing-details">
+                            <!--Billing details-->
+                            <div class="details-container billing-container">
                                 <h6>Billing details</h6>
 
-                                <div class="box name-box">
-                                    <label for="fname">Name</label>
-                                    <input type="text" id="fname" name="fullname" placeholder="Alexei Ward">
+                                <div class="flex-box-billing">
+                                    <div class="box">
+                                        <label for="fname">Name</label>
+                                        <input type="text" id="fname" name="fullname" placeholder="Alexei Ward">
+                                    </div>
+
+                                    <div class="box">
+                                        <label for="email">Email Address</label>
+                                        <input type="text" id="email" name="email" placeholder="alexei@mail.com">
+                                    </div>
                                 </div>
 
-                                <div class=" box email-box">
-                                    <label for="email">Email Address</label>
-                                    <input type="text" id="email" name="email" placeholder="alexei@mail.com">
-                                </div>
-
-                                <div class="box phone-box">
+                                <div class="box">
                                     <label for="phone">Phone Number</label>
                                     <input type="tel" id="phone" name="phone" placeholder="+1 202-555-0136">
                                 </div>
                             </div>
 
                             <!--Shipping info-->
-                            <div class="info-box shipping-info">
+                            <div class="details-container shipping-container">
                                 <h6>shipping info</h6>
                                 <div class="box adr-box">
                                     <label for="adr">Your Address</label>
                                     <input type="text" id="adr" name="address" placeholder="1137 Williams Avenue">
                                 </div>
 
-                                <div class="box zip-box">
-                                    <label for="zip">ZIP Code</label>
-                                    <input type="text" id="zip" name="zip" placeholder="10001">
+                                <div class="flex-box-shipping">
+                                    <div class="box">
+                                        <label for="zip">ZIP Code</label>
+                                        <input type="text" id="zip" name="zip" placeholder="10001">
+                                    </div>
+
+                                    <div class="box">
+                                        <label for="city">City</label>
+                                        <input type="text" id="city" name="city" placeholder="New York">
+                                    </div>
                                 </div>
 
-                                <div class="box city-box">
-                                    <label for="city">City</label>
-                                    <input type="text" id="city" name="city" placeholder="New York">
-                                </div>
-
-                                <div class="box country.box">
+                                <div class="box">
                                     <label for="country">Country</label>
                                     <input type="text" id="country" name="country" placeholder="United States">
                                 </div>
                             </div>
 
                             <!--Payment details-->
-                            <div class="info-box payment-details">
+                            <div class="details-container payment-container">
                                 <h6>payment details</h6>
-                                <div class="payment-box">
+                                <div class="radio-container">
                                     <label id="radio-label">Payment Method</label>
-                                    <label class="radio">
-                                        <input type="radio" name="payment">e-Money
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" name="payment">Cash on Delivery
-                                    </label>
+                                    <div class="flex-box-radio">
+                                        <label class="radio">
+                                            <input type="radio" name="payment">e-Money
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="payment">Cash on Delivery
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="info-box payment-numbers">
-                                <div class="box enumber-box">
+                            <div class="details-container flex-box-e-money">
+                                <div class="box">
                                     <label for="enum">e-Money Number</label>
                                     <input type="text" id="enum" name="e-number" placeholder="238521993">
                                 </div>
-                                <div class="box pin-box">
+                                <div class="box">
                                     <label for="pin">e-Money PIN</label>
                                     <input type="text" id="pin" name="pin" placeholder="6891">
                                 </div>
+                            </div>
+
+                            <div class="cash-on-delivery">
+                                <img src="assets/checkout/icon-cash-on-delivery.svg"
+                                     alt="orange icon image of two hands exchanging money">
+                                <p>The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier
+                                    arrives at your residence. Just make sure your address is correct so that your order
+                                    will not be cancelled.</p>
                             </div>
                         </form>
                     </div>
