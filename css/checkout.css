@@ -147,12 +147,12 @@ input[type="radio"] {
     accent-color: var(--primary);
 }
 
-#radio-label {
+#radio-label, #radio-label2 {
     margin-bottom: 1px;
 }
 
 .cash-on-delivery {
-    /*display: none;*/
+    display: none;
 }
 
 /*SUMMARY CART*/
@@ -363,5 +363,23 @@ input[type="radio"] {
     .cart-summary-container {
         width: 350px;
         margin-top: 38px;
+    }
+
+    .cash-on-delivery {
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .cash-on-delivery p {
+        width: 554px;
+        text-align: left;
+        opacity: 50%;
     }
 }
