@@ -257,11 +257,10 @@ input[type="radio"] {
     .checkout-container {
         width: 100%;
         height: 1133px;
-        border-radius: .5rem;
     }
 
     form {
-        height: 947px;
+        height: 977px;
         width: 39.656rem;
     }
 
@@ -347,39 +346,62 @@ input[type="radio"] {
 
     /*Typography*/
     h1 {
-        margin-top: 54px;
-        margin-left: 48px;
+        margin: 0 0 41px 0;
     }
 
     /*CHECKOUT*/
     .checkout-container {
         margin-top: 38px;
         width: 730px;
-        height: 1126px;
+        height: 1150px;
         margin-bottom: 141px;
+        padding: 54px 48px 48px 48px;
     }
+
+    form {
+        height: 980px;
+        width: 634px;
+    }
+
+    .flex-box-e-money {
+        margin: 0;
+    }
+
+    .box {
+        margin: 0;
+    }
+
+    .fname-box,
+    .email-box,
+    .adr-box,
+    .zip-box,
+    .city-box {
+        margin-bottom: 24px;
+    }
+
+
+    /*cash on delivery hidden radio check*/
+    /*.hidden {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.cash-on-delivery {*/
+    /*    width: 100%;*/
+    /*    height: 75px;*/
+    /*    display: flex;*/
+    /*    justify-content: space-between;*/
+    /*    align-items: center;*/
+    /*}*/
+
+    /*.cash-on-delivery p {*/
+    /*    width: 554px;*/
+    /*    text-align: left;*/
+    /*    opacity: 50%;*/
+    /*}*/
 
     /*SUMMARY CART*/
     .cart-summary-container {
         width: 350px;
         margin-top: 38px;
-    }
-
-    .cash-on-delivery {
-        width: 100%;
-        height: 75px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .hidden {
-        display: none;
-    }
-
-    .cash-on-delivery p {
-        width: 554px;
-        text-align: left;
-        opacity: 50%;
     }
 }
