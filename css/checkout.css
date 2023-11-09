@@ -31,19 +31,6 @@ h6 {
     gap: 32px;
 }
 
-/*Breadcrumb*/
-.breadcrumb {
-    color: var(--tertiary);
-    opacity: 50%;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 0;
-    text-align: left;
-    margin-top: 1rem;
-    margin-left: 24px;
-}
-
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -236,11 +223,6 @@ input[type="radio"] {
         padding-bottom: 400px;
     }
 
-    /*Breadcrumb*/
-    .breadcrumb {
-        margin-top: 3rem;
-    }
-
     /*Typography*/
     h1 {
         font-size: 32px;
@@ -331,11 +313,6 @@ input[type="radio"] {
 
     .outer-container-main {
         padding-bottom: 365px;
-    }
-
-    /*Breadcrumb*/
-    .breadcrumb {
-        margin-top: 79px;
     }
 
     .flex-container {

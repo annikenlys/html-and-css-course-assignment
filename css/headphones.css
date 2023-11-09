@@ -1,17 +1,131 @@
+/*Typography*/
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.description-text h2 {
+    letter-spacing: 1px;
+    height: 76px;
+}
+
+.description-text h3 {
+    text-align: center;
+    color: var(--primary);
+}
+
+.description-text p {
+    text-align: center;
+}
+
 /*HEADER - NAV*/
 .outer-container-header {
     background-color: var(--tertiary);
-    height: 90px;
+    height: 192px;
+}
+
+header {
+    border-bottom: 1px solid rgb(151 151 151 / 10%);
+}
+
+/*MAIN*/
+main {
+    gap: 120px;
+}
+
+/*PRODUCT-PAGE Cards*/
+.product-page-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.product-page-cards {
+    width: 100%;
+}
+
+.product-card-xx99 {
+    height: 724px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card-xx99-ii,
+.product-card-xx59 {
+    height: 681px;
+}
+
+.product-img-container {
+    width: 327px;
+    height: 352px;
+    background-color: var(--color-card);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.product-img {
+    width: 13.484rem;
+    height: 225px;
+    margin-top: 41px;
+}
+
+.img-xx99 {
+    background-image: url("../assets/product-xx99-mark-one-headphones/mobile/img.png");
+    background-size: cover;
+}
+
+/*PAGE CATEGORY Nav Cards*/
+.page-card-container {
+    margin: 0;
 }
 
 /*MEDIA QUERY SCREEN SIZES*/
 /*Tablet (M)*/
 @media (min-width: 768px) {
+    /*Typography*/
+    .description-text h2 {
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 0.089rem;
+    }
+
+    /*HEADER - NAV*/
+    .outer-container-header {
+        height: 336px;
+    }
+
+    /*MAIN*/
+    /*ABOUT Section*/
+    .flex-container-about {
+        margin-bottom: 120px;
+    }
 }
 
 /*Desktop (XL) */
 @media (min-width: 1280px) {
-    .outer-container-header {
-        height: 97px;
+    /*Typography*/
+    .description-text h2,
+    .description-text h3,
+    .description-text p {
+        text-align: left;
+    }
+
+    /*MAIN*/
+    main {
+        gap: 160px;
+    }
+
+    /*ABOUT Section*/
+    .flex-container-about {
+        margin-bottom: 160px;
     }
 }
+

@@ -25,7 +25,8 @@ h3 {
     letter-spacing: 10px;
 }
 
-/*Product detail page - headers*/
+/*Headers product detail page
+  & About section */
 h4 {
     font-size: 24px;
     font-weight: 700;
@@ -192,6 +193,19 @@ body {
     margin: 0 auto;
 }
 
+/*NAV Breadcrumb*/
+.breadcrumb {
+    color: var(--tertiary);
+    opacity: 50%;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 24px;
+}
+
 /*HEADER - NAV*/
 header {
     display: flex;
@@ -239,6 +253,128 @@ ul {
 main {
     display: flex;
     flex-direction: column;
+}
+
+/*PAGE CATEGORY Nav Cards*/
+.page-card-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 2.5rem;
+    gap: 1rem;
+}
+
+.page-card {
+    width: 327px;
+    height: 217px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+}
+
+.page-card:hover {
+    cursor: pointer;
+}
+
+.card-header {
+    height: 52px;
+    background-color: transparent;
+}
+
+.card-body {
+    background-color: var(--color-card);
+    height: 165px;
+    border-radius: .5rem;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-headphones-img {
+    background-image: url("../assets/home/mobile/headpnones_small.png");
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    width: 4.995rem;
+    height: 104px;
+    bottom: 36px;
+}
+
+.card-speaker-img {
+    background-image: url("../assets/home/mobile/speakers_small.png");
+    background-size: cover;
+    margin: auto;
+    width: 5.253rem;
+    height: 101px;
+    bottom: 39px;
+}
+
+.card-earphones-img {
+    background-image: url("../assets/home/mobile/earphones_small.png");
+    background-size: cover;
+    margin: auto;
+    width: 103px;
+    height: 104px;
+    bottom: 36px;
+}
+
+.card-content {
+    position: relative;
+    bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-category-text {
+    color: var(--tertiary);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.067rem;
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+/*ABOUT Section*/
+.flex-container-about {
+    width: 100%;
+    height: 698px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-content-about-img {
+    background-image: url("../assets/shared/mobile/image-best-gear.jpg");
+    background-size: cover;
+    width: 327px;
+    height: 300px;
+    border-radius: .5rem ;
+    margin-bottom: 40px;
+}
+
+.flex-content-about-text h2 {
+    letter-spacing: 1px;
+    height: 76px;
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+
+.flex-content-about-text h2 span {
+    color: var(--primary);
+}
+
+.flex-content-about-text p {
+    height: 250px;
+    color: var(--tertiary);
+    opacity: 50%;
+    text-align: center;
+    margin: 0;
 }
 
 /*FOOTER*/
@@ -353,6 +489,56 @@ footer p {
         max-width: 689px;
     }
 
+    /*NAV Breadcrumb*/
+    .breadcrumb {
+        margin-top: 3rem;
+    }
+
+    /*MAIN*/
+    /*PAGE CATEGORY Nav Cards*/
+    .page-card-container {
+        flex-direction: row;
+        margin-top: 6rem;
+        gap: 10px;
+        width: 689px;
+    }
+
+    .page-card {
+        width: 223px;
+    }
+
+    /*ABOUT Section*/
+    .flex-container-about {
+        width: 100%;
+        height: 633px;
+    }
+
+    .flex-content-about-img {
+        background-image: url("../assets/shared/tablet/image-best-gear.jpg");
+        width: 689px;
+        height: 300px;
+        margin-bottom: 63px;
+    }
+
+    .flex-content-about-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-content-about-text h2 {
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: 0.089rem;
+        width: 573px;
+        height: 88px;
+    }
+
+    .flex-content-about-text p {
+        height: 150px;
+        width: 573px;
+    }
+
     /*FOOTER*/
     .outer-container-footer {
         height: 400px;
@@ -419,6 +605,11 @@ footer p {
         max-width: 1110px;
     }
 
+    /*Breadcrumb*/
+    .breadcrumb {
+        margin-top: 79px;
+    }
+
     /*HEADER / NAV*/
     header {
         justify-content: flex-start;
@@ -442,6 +633,121 @@ footer p {
 
     .menu-toggle-btn {
         display: none;
+    }
+
+    /*MAIN*/
+    /*PAGE CATEGORY Nav Cards*/
+    .page-card-container {
+        gap: 30px;
+        height: 284px;
+        width: 100%;
+    }
+
+    .page-card {
+        width: 350px;
+        margin: 0;
+    }
+
+    .page-card-headphones .card-header {
+        height: 80px;
+    }
+
+    .page-card-speakers .card-header {
+        height: 4.531rem;
+    }
+
+    .page-card-earphones .card-header {
+        height: 59px;
+    }
+
+    .card-body {
+        height: 204px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-card-headphones {
+        height: 284px;
+    }
+
+    .page-card-speakers {
+        height: 17.281rem;
+        align-self: flex-end;
+    }
+
+    .page-card-earphones {
+        height: 263px;
+        align-self: flex-end;
+    }
+
+    .card-content {
+        position: absolute;
+    }
+
+    .card-img {
+        margin: 0;
+    }
+
+    .card-headphones-img {
+        background-image: url("../assets/home/desktop/headphones_large.png");
+        width: 7.684rem;
+        height: 160px;
+        bottom: 102px;
+    }
+
+    .card-speaker-img {
+        background-image: url("../assets/home/desktop/speakers_large.png");
+        width: 7.593rem;
+        height: 146px;
+        bottom: 101px;
+    }
+
+    .card-earphones-img {
+        background-image: url("../assets/home/desktop/eraphones_large.png");
+        width: 125px;
+        height: 126px;
+        bottom: 98px;
+    }
+
+    .card-category-text {
+        font-size: 18px;
+        letter-spacing: 0.081rem;
+        margin-bottom: 15px;
+    }
+
+    /*ABOUT Section*/
+    .flex-container-about {
+        height: 588px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .flex-content-about-img {
+        background-image: url("../assets/shared/desktop/image-best-gear.jpg");
+        width: 540px;
+        height: 588px;
+        margin: 0;
+    }
+
+    .flex-content-about-text {
+        display: flex;
+        align-items: center;
+        width: 445px;
+        height: 295px;
+        margin: 146px 123px 147px 0;
+    }
+
+    .flex-content-about-text h2 {
+        text-align: left;
+        width: 445px;
+    }
+
+    .flex-content-about-text p {
+        text-align: left;
+        height: 175px;
+        width: 445px;
     }
 
     /*FOOTER*/

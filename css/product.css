@@ -1,0 +1,42 @@
+/*HEADER - NAV*/
+.outer-container-header {
+    background-color: var(--tertiary);
+    height: 90px;
+}
+
+/*MAIN*/
+main {
+    gap: 120px;
+}
+
+/*PAGE CATEGORY Nav Cards*/
+.page-card-container {
+    margin: 0;
+}
+
+/*MEDIA QUERY SCREEN SIZES*/
+/*Tablet (M)*/
+@media (min-width: 768px) {
+    /*MAIN*/
+    /*ABOUT Section*/
+    .flex-container-about {
+        margin-bottom: 120px;
+    }
+}
+
+/*Desktop (XL) */
+@media (min-width: 1280px) {
+    .outer-container-header {
+        height: 97px;
+    }
+
+    /*MAIN*/
+    main {
+        gap: 120px;
+    }
+
+    /*ABOUT Section*/
+    .flex-container-about {
+        margin-bottom: 160px;
+    }
+}
