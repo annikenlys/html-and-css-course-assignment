@@ -10,18 +10,22 @@ h1 {
     margin-bottom: 32px;
 }
 
-.description-text h2 {
+.content-text-btn h2 {
     letter-spacing: 1px;
     height: 76px;
+    margin: 0;
 }
 
-.description-text h3 {
+.content-text-btn h3 {
     text-align: center;
     color: var(--primary);
+    margin: 0;
 }
 
-.description-text p {
+.content-text-btn p {
     text-align: center;
+    margin: 0;
+    opacity: 50%;
 }
 
 /*HEADER - NAV*/
@@ -44,10 +48,14 @@ main {
     display: flex;
     flex-direction: column;
     gap: 120px;
+    margin-top: 120px;
 }
 
 .product-page-cards {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .product-card-xx99 {
@@ -57,9 +65,24 @@ main {
     justify-content: space-between;
 }
 
+.product-card-xx99 .content-text-btn {
+    height: 340px;
+}
+
 .product-card-xx99-ii,
 .product-card-xx59 {
     height: 681px;
+}
+
+.content-text-btn {
+    height: 297px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    margin: 0;
 }
 
 .product-img-container {
@@ -67,19 +90,47 @@ main {
     height: 352px;
     background-color: var(--color-card);
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5rem;
 }
 
 .product-img {
-    width: 13.484rem;
-    height: 225px;
+    background-size: cover;
     margin-top: 41px;
+    z-index: 1;
+    display: flex;
+    position: absolute;
 }
 
 .img-xx99 {
     background-image: url("../assets/product-xx99-mark-one-headphones/mobile/img.png");
-    background-size: cover;
+    width: 13.484rem;
+    height: 243px;
+}
+
+.img-xx99-ii {
+    background-image: url("../assets/product-xx99-mark-two-headphones/mobile/img.png");
+    width: 10.806rem;
+    height: 225px;
+}
+
+.img-xx59 {
+    background-image: url("../assets/product-xx59-headphones/mobile/img.png");
+    width: 13.484rem;
+    height: 225px;
+}
+
+.oval-img {
+    background-image: url("../assets/shared/oval.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 165px;
+    height: 84px;
+    position: relative;
+    top: 246px;
+    display: flex;
+    align-self: center;
 }
 
 /*PAGE CATEGORY Nav Cards*/
@@ -91,10 +142,23 @@ main {
 /*Tablet (M)*/
 @media (min-width: 768px) {
     /*Typography*/
-    .description-text h2 {
+    h1 {
+        margin-top: 105px;
+    }
+
+    .content-text-btn h2 {
         font-size: 40px;
         line-height: 44px;
         letter-spacing: 0.089rem;
+        margin-bottom: 32px;
+    }
+
+    .content-text-btn h3 {
+        margin-bottom: 1rem;
+    }
+
+    .content-text-btn p {
+        margin-bottom: 24px;
     }
 
     /*HEADER - NAV*/
@@ -103,6 +167,33 @@ main {
     }
 
     /*MAIN*/
+    /*PRODUCT-PAGE Cards*/
+    .product-page-cards {
+        align-items: center;
+        height: 671px;
+        gap: 52px;
+    }
+
+    .product-card-xx99 {
+        height: 706px;
+    }
+
+    .content-text-btn {
+        height: 267px;
+        width: 572px;
+        gap: 0;
+    }
+
+    .product-card-xx99 .content-text-btn {
+        height: 302px;
+        width: 572px;
+    }
+
+    .product-img-container {
+        width: 689px;
+        height: 352px;
+    }
+
     /*ABOUT Section*/
     .flex-container-about {
         margin-bottom: 120px;
@@ -112,15 +203,93 @@ main {
 /*Desktop (XL) */
 @media (min-width: 1280px) {
     /*Typography*/
-    .description-text h2,
-    .description-text h3,
-    .description-text p {
+    h1 {
+        margin-top: 98px;
+    }
+
+    .content-text-btn p {
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .content-text-btn h2,
+    .content-text-btn h3 {
         text-align: left;
     }
 
     /*MAIN*/
     main {
         gap: 160px;
+    }
+
+    /*PRODUCT-PAGE Cards*/
+    .product-page-cards-container {
+        gap: 160px;
+        margin-top: 160px;
+    }
+
+    .product-page-cards {
+        height: 560px;
+        display: flex;
+        flex-direction: row;
+        gap: 125px;
+    }
+
+    .product-card-xx99-ii {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .product-card-xx99 .content-text-btn {
+        height: 343px;
+    }
+
+    .content-text-btn {
+        height: 308px;
+        width: 445px;
+        align-items: flex-start;
+    }
+
+    .product-img-container {
+        width: 540px;
+        height: 560px;
+        display: flex;
+        position: relative;
+    }
+
+    .product-img {
+        background-size: cover;
+        display: flex;
+    }
+
+    .img-xx99 {
+        background-image: url("../assets/product-xx99-mark-one-headphones/desktop/img.png");
+        width: 21.828rem;
+        height: 386px;
+        margin-top: 4.094rem;
+    }
+
+    .img-xx99-ii {
+        background-image: url("../assets/product-xx99-mark-two-headphones/desktop/img.png");
+        width: 18.49rem;
+        height: 385px;
+        margin-top: 66px;
+    }
+
+    .img-xx59 {
+        background-image: url("../assets/product-xx59-headphones/desktop/img.png");
+        width: 23.311rem;
+        height: 389px;
+        margin-top: 83px;
+    }
+
+    .oval-img {
+        background-image: url("../assets/shared/oval-desktop.png");
+        background-size: cover;
+        width: 268px;
+        height: 100px;
+        top: 423px;
+        position: relative;
     }
 
     /*ABOUT Section*/
