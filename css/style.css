@@ -403,6 +403,7 @@ a:hover, a:focus {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 ul {
