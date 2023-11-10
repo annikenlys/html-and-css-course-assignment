@@ -109,6 +109,12 @@ main p {
     gap: 24px;
 }
 
+.flex-container-text-list {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+}
+
 /*In The Box List */
 .box-list {
     display: flex;
@@ -319,6 +325,13 @@ main p {
         margin-top: 31px;
     }
 
+    /*features*/
+    .flex-container-text-list {
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+    }
+
     /*In The Box List */
     .box-list {
         display: flex;
@@ -506,6 +519,7 @@ main p {
         height: 318px;
         width: 100%;
         display: flex;
+        flex-direction: row;
         gap: 125px;
     }
 
@@ -569,6 +583,12 @@ main p {
     .rec {
         gap: 40px;
         width: 350px;
+    }
+
+    .img-zx9:hover,
+    .img-xx59:hover,
+    .img-xx99:hover {
+        cursor: pointer;
     }
 
     .rec-img-container {
