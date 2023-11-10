@@ -636,7 +636,7 @@ footer p {
     /*MODAL CARD*/
     .modal-cart {
         top: 50%;
-        left: 66%;
+        left: 63%;
         transform: translate(-50%, -50%);
     }
 
