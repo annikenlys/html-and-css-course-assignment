@@ -18,7 +18,7 @@
         <div class="inner-container">
             <header>
                 <!--BURGER MENU BTN-->
-                <button type="button" id="toggleBtn" class="menu-toggle-btn">
+                <button type="button" id="toggleBtn" class="menu-toggle-btn" aria-label="menu drawer">
                     <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="Group">
                             <rect id="Rectangle" width="16" height="3" fill="white"/>
@@ -88,10 +88,10 @@
                                 </div>
                             </div>
 
-                            <div class="cart-quantity-btn">
-                                <p>-</p>
+                            <div class="quantity-btn cart-quantity-btn">
+                                <p class="hover">-</p>
                                 <p class="black">1</p>
-                                <p>+</p>
+                                <p class="hover">+</p>
                             </div>
                         </div>
 
@@ -107,10 +107,10 @@
                                 </div>
                             </div>
 
-                            <div class="cart-quantity-btn">
-                                <p>-</p>
+                            <div class="quantity-btn cart-quantity-btn">
+                                <p class="hover">-</p>
                                 <p class="black">2</p>
-                                <p>+</p>
+                                <p class="hover">+</p>
                             </div>
                         </div>
 
@@ -125,10 +125,10 @@
                                     <p class="price">$ 599</p>
                                 </div>
                             </div>
-                            <div class="cart-quantity-btn">
-                                <p>-</p>
+                            <div class="quantity-btn cart-quantity-btn">
+                                <p class="hover">-</p>
                                 <p class="black">1</p>
-                                <p>+</p>
+                                <p class="hover">+</p>
                             </div>
                         </div>
                     </div>
@@ -153,6 +153,35 @@
             <a href="headphones.html" aria-label="go back" aria-current="page" class="breadcrumb">
                 <span>Go Back</span>
             </a>
+
+            <section class="product-section">
+                <!--XX99 Mark II Headphones-->
+                <div class="card-content">
+                    <div class="product-img-container">
+                        <div class="product-img img-xx99"></div>
+                        <div class="oval-img"></div>
+                    </div>
+                    <div class="text-content">
+                        <h3>NEW PRODUCT</h3>
+                        <h1>XX99 Mark II<br>Headphones</h1>
+                        <p>
+                            The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium
+                            headphone experience by reproducing the balanced depth and precision of studio-quality
+                            sound.
+                        </p>
+                        <h5>$ 2,999</h5>
+                    </div>
+                </div>
+
+                <div class="btns-container">
+                    <div class="quantity-btn product-quantity-btn">
+                        <p class="hover">-</p>
+                        <p>1</p>
+                        <p class="hover">+</p>
+                    </div>
+                    <a role="button" class="btn btn-1" href="#modal-container">ADD TO CART</a>
+                </div>
+            </section>
 
             <!--CATEGORY PAGE NAV CARDS-->
             <section class="page-card-container">

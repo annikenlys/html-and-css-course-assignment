@@ -25,8 +25,6 @@ h3 {
     letter-spacing: 10px;
 }
 
-/*Headers product detail page
-  & About section */
 h4 {
     font-size: 24px;
     font-weight: 700;
@@ -37,7 +35,6 @@ h4 {
     text-align: left;
 }
 
-/*Cart - header*/
 h5 {
     font-size: 18px;
     font-weight: 700;
@@ -47,7 +44,6 @@ h5 {
     text-align: left;
 }
 
-/*Check out detail - headers*/
 h6 {
     font-size: 13px;
     font-weight: 700;
@@ -196,6 +192,48 @@ P {
     color: var(--primary);
 }
 
+.quantity-btn {
+    background-color: var(--color-card);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cart-quantity-btn {
+    width: 96px;
+    height: 32px;
+}
+
+.product-quantity-btn {
+    width: 120px;
+    height: 48px;
+}
+
+.quantity-btn p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 700;
+    width: 16px;
+    height: 18px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-btn .hover,
+.modal-cart .hover:hover{
+    opacity: 50%;
+}
+
+.quantity-btn .hover:hover,
+.modal-cart .hover:hover{
+    cursor: pointer;
+    color: var(--primary);
+}
+
 /*BODY*/
 * {
     box-sizing: border-box;
@@ -296,30 +334,6 @@ body {
 .cart-img {
     width: auto;
     height: 40px;
-}
-
-.cart-quantity-btn {
-    background-color: var(--color-card);
-    display: flex;
-    flex-direction: row;
-    width: 96px;
-    height: 32px;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.cart-quantity-btn p {
-    opacity: 50%;
-    width: 16px;
-    height: 18px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cart-quantity-btn .black {
-    opacity: 100%;
 }
 
 .modal-cart .total {
