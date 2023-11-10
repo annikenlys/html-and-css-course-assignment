@@ -236,8 +236,9 @@ body {
     border-radius: .5rem;
     width: 377px;
     height: 488px;
-    top: 129px;
-    right: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -632,10 +633,11 @@ footer p {
         letter-spacing: 0.071rem;
     }
 
-    /*MODAL CART*/
+    /*MODAL CARD*/
     .modal-cart {
-        top: 129px;
-        right: 240px;
+        top: 50%;
+        left: 66%;
+        transform: translate(-50%, -50%);
     }
 
     /*BODY*/
@@ -753,10 +755,11 @@ footer p {
 
 /*Desktop (XL) */
 @media (min-width: 1280px) {
-    /*MODAL CART*/
+    /*MODAL CARD*/
     .modal-cart {
-        top: 129px;
-        right: 200px;
+        top: 50%;
+        left: 74%;
+        transform: translate(-50%, -50%);
     }
 
     /*BODY*/
