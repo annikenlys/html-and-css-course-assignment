@@ -4,7 +4,7 @@
 
 This is a **course assignment** for a **HTML** and **CSS** course at Noroff 
 
-My choosen project is a soulution for the [Frontend Mentor task](https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx).
+My choosen project is a soulution for the [Frontend Mentor task](https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx)
 
 ### Features
 - Home page
