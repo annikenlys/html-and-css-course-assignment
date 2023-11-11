@@ -8,7 +8,7 @@ My chosen project is a solution for the [Frontend Mentor task](https://www.front
 
 ### Features
 - Home page
-- category page
+- Category page
 - Products page
 - Checkout 
 
